@@ -16,28 +16,33 @@
             <button class="tab-btn" rele="tab">
                 <spam class="nav-tab-text">Operaciones Aritmeticas</spam>
             </button>
-            </button>
             <button class="tab-btn" role="tab">
                 <spam class="nav-tab-text">B)</spam>
+            </button>
         </nav>
         <section id="panel-clasificar" class="tab-panel active">
             <div class="card">
-                <h2>Clarsificador de Conjunto de Números</h2>
-                <p>Ingresa un número y selecciona un conjunto para verificarsi pertenece a él.</p>
+                <div class="card-header">
+                    <h2>Clarsificador de Conjunto de Números</h2>
+                    <p>Ingresa un número y selecciona un conjunto para verificarsi pertenece a él.</p>
+                </div>
             </div>
-            <input type="text" id="numero-input">
-
-            <select id="select-conjuntos">
-                <option value="naturales">Naturales</option>
-                <option value="enteros">Enteros</option>
-                <option value="racionales">Racionales</option>
-            </select>
+            <div class="card-object">
+                    <label>Inserte Numero: </label>
+                    <input type="text" id="numero-input" placeholder="EJ: 1, -8, 3/4, 7.6">
+                <div class="card-object">
+                    
+                    <select id="select-conjuntos">
+                        <option value="">Seleccione un conjunto</option>
+                        <option value="naturales">Naturales (N)</option>
+                        <option value="enteros">Enteros (Z)</option>
+                        <option value="racionales">Racionales (Q)</option>
+                    </select>
+                </div> 
+                <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>       
+            </div>
+            
         </section>
-        <h1>HOLA, MUNDO!!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus distinctio blanditiis sapiente eaque quam? Quisquam odio aspernatur tempora deserunt dicta commodi eius, ut natus culpa quibusdam, cupiditate ipsa repudiandae.</p>
-
-
-
     </div>
     </body>
 </html>
